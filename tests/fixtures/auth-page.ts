@@ -71,7 +71,7 @@ export class AuthPage {
   }
 
   async goto() {
-    await this.page.goto('/auth');
+    await this.page.goto('auth');
   }
 
   async clickDoctorCard() {
@@ -79,7 +79,7 @@ export class AuthPage {
   }
 
   async clickPatientCard() {
-    await this.patientCard.click();
+    await this.patientRoleButton.click();
   }
 
   async fillDoctorLoginForm(email: string, password: string) {

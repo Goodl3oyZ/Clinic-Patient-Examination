@@ -22,6 +22,13 @@ export const invalidCredentials = {
   malformedEmail: 'not-an-email',
 };
 
+// Seeded patient used for doctor workflow tests
+export const testPatientRecord = {
+  firstName: 'John',
+  lastName: 'Doe',
+  searchName: 'John',
+};
+
 // Medical data for testing doctor workflows
 export const medicalData = {
   chiefComplaint: 'ปวดหัวและมีไข้',

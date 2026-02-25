@@ -1,0 +1,117 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - link "มงคลคีรี MCMS" [ref=e7] [cursor=pointer]:
+          - /url: /mongkolkiri_clinic-main
+          - img [ref=e9]
+          - generic [ref=e12]:
+            - heading "มงคลคีรี" [level=1] [ref=e13]
+            - paragraph [ref=e14]: MCMS
+        - navigation [ref=e15]:
+          - link "แดชบอร์ด" [ref=e16] [cursor=pointer]:
+            - /url: /mongkolkiri_clinic-main
+            - img [ref=e17]
+            - text: แดชบอร์ด
+          - link "ลงทะเบียนผู้ป่วย" [ref=e22] [cursor=pointer]:
+            - /url: /mongkolkiri_clinic-main/register
+            - img [ref=e23]
+            - text: ลงทะเบียนผู้ป่วย
+          - link "รายชื่อผู้ป่วย" [ref=e26] [cursor=pointer]:
+            - /url: /mongkolkiri_clinic-main/patients
+            - img [ref=e27]
+            - text: รายชื่อผู้ป่วย
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic [ref=e35]: D
+            - generic [ref=e36]:
+              - paragraph [ref=e37]: Dr. Test Doctor
+              - paragraph [ref=e38]: doctor.test@example.com
+          - button "ออกจากระบบ" [ref=e39] [cursor=pointer]:
+            - img
+            - text: ออกจากระบบ
+    - generic [ref=e40]:
+      - banner [ref=e41]:
+        - heading "ระบบบริหารจัดการคลินิก" [level=2] [ref=e43]
+      - main [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - button "กลับ" [ref=e47] [cursor=pointer]:
+              - img
+              - text: กลับ
+            - button "ส่งออก PDF" [ref=e48] [cursor=pointer]:
+              - img
+              - text: ส่งออก PDF
+          - generic [ref=e49]:
+            - 'heading "John Doe แพ้ยา HN: HN266000" [level=3] [ref=e51]':
+              - img [ref=e53]
+              - generic [ref=e56]:
+                - generic [ref=e57]:
+                  - generic [ref=e58]: John Doe
+                  - generic [ref=e59]:
+                    - img [ref=e60]
+                    - text: แพ้ยา
+                - paragraph [ref=e62]: "HN: HN266000"
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - generic [ref=e66]:
+                  - img [ref=e67]
+                  - generic [ref=e69]: "วันเกิด:"
+                  - generic [ref=e70]: 20 มิถุนายน 2019 (6 ปี)
+                - generic [ref=e71]:
+                  - img [ref=e72]
+                  - generic [ref=e75]: "เพศ:"
+                  - generic [ref=e76]: ชาย
+                - generic [ref=e77]:
+                  - img [ref=e78]
+                  - generic [ref=e80]: "เลขบัตรประชาชน:"
+                  - generic [ref=e81]: "1234567891234"
+              - generic [ref=e82]:
+                - generic [ref=e83]:
+                  - img [ref=e84]
+                  - generic [ref=e86]: "โทรศัพท์:"
+                  - generic [ref=e87]: "0812345678"
+                - generic [ref=e88]:
+                  - img [ref=e89]
+                  - generic [ref=e92]: "ที่อยู่:"
+                  - generic [ref=e93]: "-"
+              - generic [ref=e95]:
+                - generic [ref=e96]:
+                  - img [ref=e97]
+                  - text: การแพ้ยา/อาหาร
+                - generic [ref=e99]:
+                  - generic [ref=e100]: H
+                  - generic [ref=e101]: HA
+                  - generic [ref=e102]: SA-25
+          - generic [ref=e103]:
+            - tablist [ref=e104]:
+              - tab "บันทึกอาการ" [selected] [ref=e105] [cursor=pointer]:
+                - img [ref=e106]
+                - text: บันทึกอาการ
+              - tab "การวินิจฉัย" [ref=e109] [cursor=pointer]:
+                - img [ref=e110]
+                - text: การวินิจฉัย
+              - tab "แผนการรักษา" [ref=e114] [cursor=pointer]:
+                - img [ref=e115]
+                - text: แผนการรักษา
+              - tab "หัตถการ" [ref=e118] [cursor=pointer]:
+                - img [ref=e119]
+                - text: หัตถการ
+              - tab "ประวัติยา" [ref=e125] [cursor=pointer]:
+                - img [ref=e126]
+                - text: ประวัติยา
+            - tabpanel "บันทึกอาการ" [ref=e129]:
+              - generic [ref=e130]:
+                - generic [ref=e131]:
+                  - heading "บันทึกอาการ (0 รายการ)" [level=3] [ref=e132]
+                  - button "เพิ่มบันทึกอาการ" [ref=e133] [cursor=pointer]:
+                    - img
+                    - text: เพิ่มบันทึกอาการ
+                - paragraph [ref=e135]: ยังไม่มีบันทึกอาการ
+```

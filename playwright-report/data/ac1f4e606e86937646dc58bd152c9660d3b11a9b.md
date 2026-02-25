@@ -1,0 +1,187 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - list:
+      - listitem [ref=e1]:
+        - generic [ref=e2]:
+          - generic [ref=e3]: เกิดข้อผิดพลาด
+          - generic [ref=e4]: insert or update on table "patient_consultations" violates foreign key constraint "patient_consultations_created_by_fkey"
+        - button [ref=e5] [cursor=pointer]:
+          - img [ref=e6]
+    - region "Notifications alt+T"
+    - generic:
+      - complementary:
+        - generic:
+          - generic:
+            - link:
+              - /url: /mongkolkiri_clinic-main
+              - generic:
+                - img
+              - generic:
+                - heading [level=1]: มงคลคีรี
+                - paragraph: MCMS
+          - navigation:
+            - link:
+              - /url: /mongkolkiri_clinic-main
+              - img
+              - text: แดชบอร์ด
+            - link:
+              - /url: /mongkolkiri_clinic-main/register
+              - img
+              - text: ลงทะเบียนผู้ป่วย
+            - link:
+              - /url: /mongkolkiri_clinic-main/patients
+              - img
+              - text: รายชื่อผู้ป่วย
+          - generic:
+            - generic:
+              - generic:
+                - generic: D
+              - generic:
+                - paragraph: Dr. Test Doctor
+                - paragraph: doctor.test@example.com
+            - button:
+              - img
+              - text: ออกจากระบบ
+      - generic:
+        - banner:
+          - generic:
+            - heading [level=2]: ระบบบริหารจัดการคลินิก
+        - main:
+          - generic:
+            - generic:
+              - button:
+                - img
+                - text: กลับ
+              - button:
+                - img
+                - text: ส่งออก PDF
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - generic:
+                    - img
+                  - generic:
+                    - generic:
+                      - generic: John Doe
+                      - generic:
+                        - img
+                        - text: แพ้ยา
+                    - paragraph: "HN: HN266000"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "วันเกิด:"
+                      - generic: 20 มิถุนายน 2019 (6 ปี)
+                    - generic:
+                      - img
+                      - generic: "เพศ:"
+                      - generic: ชาย
+                    - generic:
+                      - img
+                      - generic: "เลขบัตรประชาชน:"
+                      - generic: "1234567891234"
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "โทรศัพท์:"
+                      - generic: "0812345678"
+                    - generic:
+                      - img
+                      - generic: "ที่อยู่:"
+                      - generic: "-"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                        - text: การแพ้ยา/อาหาร
+                      - generic:
+                        - generic: H
+                        - generic: HA
+                        - generic: SA-25
+            - generic:
+              - tablist:
+                - tab [selected]:
+                  - img
+                  - text: บันทึกอาการ
+                - tab:
+                  - img
+                  - text: การวินิจฉัย
+                - tab:
+                  - img
+                  - text: แผนการรักษา
+                - tab:
+                  - img
+                  - text: หัตถการ
+                - tab:
+                  - img
+                  - text: ประวัติยา
+              - tabpanel:
+                - generic:
+                  - generic:
+                    - heading [level=3]: บันทึกอาการ (0 รายการ)
+                    - button:
+                      - img
+                      - text: เพิ่มบันทึกอาการ
+                  - generic:
+                    - paragraph: ยังไม่มีบันทึกอาการ
+  - dialog "เพิ่มบันทึกอาการใหม่" [ref=e10]:
+    - heading "เพิ่มบันทึกอาการใหม่" [level=2] [ref=e12]
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - text: วันที่ตรวจ
+        - textbox "วันที่ตรวจ" [ref=e15]: 2026-02-25
+      - generic [ref=e16]:
+        - text: อาการหลัก (Chief Complaint) *
+        - textbox "อาการหลัก (Chief Complaint) *" [ref=e17]:
+          - /placeholder: เช่น ปวดหัว เวียนศีรษะ 3 วัน
+          - text: ปวดหัว เวียนศีรษะ 3 วัน
+      - generic [ref=e18]:
+        - text: Vital Signs
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - text: ความดันโลหิต (BP)
+            - textbox "ความดันโลหิต (BP)" [ref=e21]:
+              - /placeholder: เช่น 120/80
+              - text: 120/80
+          - generic [ref=e22]:
+            - text: ชีพจร (HR)
+            - textbox "ชีพจร (HR)" [ref=e23]:
+              - /placeholder: เช่น 80
+              - text: "80"
+          - generic [ref=e24]:
+            - text: อุณหภูมิ (°C)
+            - textbox "อุณหภูมิ (°C)" [ref=e25]:
+              - /placeholder: เช่น 36.5
+              - text: "36.5"
+          - generic [ref=e26]:
+            - text: อัตราหายใจ (RR)
+            - textbox "อัตราหายใจ (RR)" [ref=e27]:
+              - /placeholder: เช่น 18
+          - generic [ref=e28]:
+            - text: น้ำหนัก (kg)
+            - textbox "น้ำหนัก (kg)" [ref=e29]:
+              - /placeholder: เช่น 65
+          - generic [ref=e30]:
+            - text: ส่วนสูง (cm)
+            - textbox "ส่วนสูง (cm)" [ref=e31]:
+              - /placeholder: เช่น 170
+      - generic [ref=e32]:
+        - text: บันทึกการตรวจร่างกาย
+        - textbox "บันทึกการตรวจร่างกาย" [ref=e33]:
+          - /placeholder: ผลการตรวจร่างกาย...
+      - generic [ref=e34]:
+        - text: หมายเหตุ
+        - textbox "หมายเหตุ" [ref=e35]:
+          - /placeholder: หมายเหตุเพิ่มเติม...
+    - generic [ref=e36]:
+      - button "ยกเลิก" [ref=e37] [cursor=pointer]
+      - button "บันทึก" [ref=e38] [cursor=pointer]
+    - button "Close" [ref=e39] [cursor=pointer]:
+      - img [ref=e40]
+      - generic [ref=e43]: Close
+```

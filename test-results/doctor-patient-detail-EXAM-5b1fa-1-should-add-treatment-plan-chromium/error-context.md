@@ -1,0 +1,160 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic:
+      - complementary:
+        - generic:
+          - generic:
+            - link:
+              - /url: /mongkolkiri_clinic-main
+              - generic:
+                - img
+              - generic:
+                - heading [level=1]: มงคลคีรี
+                - paragraph: MCMS
+          - navigation:
+            - link:
+              - /url: /mongkolkiri_clinic-main
+              - img
+              - text: แดชบอร์ด
+            - link:
+              - /url: /mongkolkiri_clinic-main/register
+              - img
+              - text: ลงทะเบียนผู้ป่วย
+            - link:
+              - /url: /mongkolkiri_clinic-main/patients
+              - img
+              - text: รายชื่อผู้ป่วย
+          - generic:
+            - generic:
+              - generic:
+                - generic: D
+              - generic:
+                - paragraph: Dr. Test Doctor
+                - paragraph: doctor.test@example.com
+            - button:
+              - img
+              - text: ออกจากระบบ
+      - generic:
+        - banner:
+          - generic:
+            - heading [level=2]: ระบบบริหารจัดการคลินิก
+        - main:
+          - generic:
+            - generic:
+              - button:
+                - img
+                - text: กลับ
+              - button:
+                - img
+                - text: ส่งออก PDF
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - generic:
+                    - img
+                  - generic:
+                    - generic:
+                      - generic: John Doe
+                      - generic:
+                        - img
+                        - text: แพ้ยา
+                    - paragraph: "HN: HN266000"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "วันเกิด:"
+                      - generic: 20 มิถุนายน 2019 (6 ปี)
+                    - generic:
+                      - img
+                      - generic: "เพศ:"
+                      - generic: ชาย
+                    - generic:
+                      - img
+                      - generic: "เลขบัตรประชาชน:"
+                      - generic: "1234567891234"
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "โทรศัพท์:"
+                      - generic: "0812345678"
+                    - generic:
+                      - img
+                      - generic: "ที่อยู่:"
+                      - generic: "-"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                        - text: การแพ้ยา/อาหาร
+                      - generic:
+                        - generic: H
+                        - generic: HA
+                        - generic: SA-25
+            - generic:
+              - tablist:
+                - tab:
+                  - img
+                  - text: บันทึกอาการ
+                - tab:
+                  - img
+                  - text: การวินิจฉัย
+                - tab [selected]:
+                  - img
+                  - text: แผนการรักษา
+                - tab:
+                  - img
+                  - text: หัตถการ
+                - tab:
+                  - img
+                  - text: ประวัติยา
+              - tabpanel:
+                - generic:
+                  - generic:
+                    - heading [level=3]: แผนการรักษา (0 รายการ)
+                    - button:
+                      - img
+                      - text: เพิ่มแผนการรักษา
+                  - generic:
+                    - paragraph: ยังไม่มีแผนการรักษา
+  - dialog "เพิ่มแผนการรักษาใหม่" [ref=e2]:
+    - heading "เพิ่มแผนการรักษาใหม่" [level=2] [ref=e4]
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - text: วันที่วางแผน
+        - textbox "วันที่วางแผน" [ref=e7]: 2026-02-25
+      - generic [ref=e8]:
+        - text: ขั้นตอนการรักษา *
+        - combobox [ref=e9] [cursor=pointer]:
+          - generic: 1. รุ - ล้างสารพิษ ล้างสารเคมี
+          - img [ref=e10]
+      - generic [ref=e12]:
+        - text: รายละเอียดขั้นตอน *
+        - textbox "รายละเอียดขั้นตอน *" [ref=e13]:
+          - /placeholder: รายละเอียดของขั้นตอนการรักษา...
+          - text: ล้างสารพิษด้วยสมุนไพรไทย
+      - generic [ref=e14]:
+        - text: ระยะเวลา
+        - textbox "ระยะเวลา" [ref=e15]:
+          - /placeholder: เช่น 7 วัน, 2 สัปดาห์
+          - text: 7 วัน
+      - generic [ref=e16]:
+        - text: วันนัดติดตาม
+        - textbox "วันนัดติดตาม" [ref=e17]
+      - generic [ref=e18]:
+        - text: หมายเหตุ
+        - textbox "หมายเหตุ" [ref=e19]:
+          - /placeholder: หมายเหตุเพิ่มเติม...
+    - generic [ref=e20]:
+      - button "ยกเลิก" [ref=e21] [cursor=pointer]
+      - button "บันทึก" [ref=e22] [cursor=pointer]
+    - button "Close" [ref=e23] [cursor=pointer]:
+      - img [ref=e24]
+      - generic [ref=e27]: Close
+```

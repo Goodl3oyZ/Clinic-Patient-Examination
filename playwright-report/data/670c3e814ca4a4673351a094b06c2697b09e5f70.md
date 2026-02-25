@@ -1,0 +1,119 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T":
+    - list:
+      - listitem [ref=e3]:
+        - img [ref=e5]
+        - generic [ref=e7]:
+          - generic [ref=e8]: เกิดข้อผิดพลาด
+          - generic [ref=e9]: duplicate key value violates unique constraint "patients_hn_key"
+  - generic [ref=e10]:
+    - complementary [ref=e11]:
+      - generic [ref=e12]:
+        - link "มงคลคีรี MCMS" [ref=e14] [cursor=pointer]:
+          - /url: /mongkolkiri_clinic-main
+          - img [ref=e16]
+          - generic [ref=e19]:
+            - heading "มงคลคีรี" [level=1] [ref=e20]
+            - paragraph [ref=e21]: MCMS
+        - navigation [ref=e22]:
+          - link "แดชบอร์ด" [ref=e23] [cursor=pointer]:
+            - /url: /mongkolkiri_clinic-main
+            - img [ref=e24]
+            - text: แดชบอร์ด
+          - link "ลงทะเบียนผู้ป่วย" [ref=e29] [cursor=pointer]:
+            - /url: /mongkolkiri_clinic-main/register
+            - img [ref=e30]
+            - text: ลงทะเบียนผู้ป่วย
+            - img [ref=e33]
+          - link "รายชื่อผู้ป่วย" [ref=e35] [cursor=pointer]:
+            - /url: /mongkolkiri_clinic-main/patients
+            - img [ref=e36]
+            - text: รายชื่อผู้ป่วย
+        - generic [ref=e41]:
+          - generic [ref=e42]:
+            - generic [ref=e44]: D
+            - generic [ref=e45]:
+              - paragraph [ref=e46]: Dr. Test Doctor
+              - paragraph [ref=e47]: doctor.test@example.com
+          - button "ออกจากระบบ" [ref=e48] [cursor=pointer]:
+            - img
+            - text: ออกจากระบบ
+    - generic [ref=e49]:
+      - banner [ref=e50]:
+        - heading "ลงทะเบียนผู้ป่วย" [level=2] [ref=e52]
+      - main [ref=e53]:
+        - generic [ref=e55]:
+          - generic [ref=e57]:
+            - img [ref=e59]
+            - generic [ref=e62]:
+              - heading "ลงทะเบียนผู้ป่วยใหม่" [level=3] [ref=e63]
+              - paragraph [ref=e64]: กรอกข้อมูลผู้ป่วยเพื่อสร้างเวชระเบียน
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - text: ชื่อ *
+                - textbox "ชื่อ *" [ref=e69]:
+                  - /placeholder: ชื่อ
+                  - text: ทดสอบ1772027616281
+              - generic [ref=e70]:
+                - text: นามสกุล *
+                - textbox "นามสกุล *" [ref=e71]:
+                  - /placeholder: นามสกุล
+                  - text: นามสกุล1772027616281
+            - generic [ref=e72]:
+              - generic [ref=e73]:
+                - generic [ref=e74]:
+                  - img [ref=e75]
+                  - text: เลขบัตรประชาชน
+                - textbox "เลขบัตรประชาชน" [ref=e77]:
+                  - /placeholder: "1234567890123"
+                  - text: "1772027616281"
+              - generic [ref=e78]:
+                - text: เพศ *
+                - combobox [ref=e79] [cursor=pointer]:
+                  - generic: ชาย
+                  - img [ref=e80]
+                - combobox [ref=e82]
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - img [ref=e86]
+                  - text: วันเกิด *
+                - textbox "วันเกิด *" [ref=e88]: 1990-06-15
+              - generic [ref=e89]:
+                - text: อายุ
+                - generic [ref=e91]: 35 ปี
+            - generic [ref=e93]:
+              - generic [ref=e94]:
+                - img [ref=e95]
+                - text: เบอร์โทรศัพท์
+              - textbox "เบอร์โทรศัพท์" [ref=e97]:
+                - /placeholder: "0812345678"
+                - text: "2027616281"
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - img [ref=e100]
+                - text: ที่อยู่
+              - textbox "ที่อยู่" [ref=e103]:
+                - /placeholder: บ้านเลขที่, ถนน, ตำบล, อำเภอ, จังหวัด, รหัสไปรษณีย์
+                - text: 123 ถนนทดสอบ ตำบลทดสอบ อำเภอทดสอบ จังหวัดทดสอบ 10000
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - img [ref=e106]
+                - text: ประวัติแพ้ยา/อาหาร
+              - generic [ref=e108]:
+                - textbox "กรอกชื่อสารที่แพ้" [ref=e109]
+                - button "เพิ่ม" [ref=e110] [cursor=pointer]
+              - generic [ref=e113]:
+                - text: เพนิซิลิน
+                - button [ref=e114] [cursor=pointer]:
+                  - img [ref=e115]
+            - generic [ref=e118]:
+              - button "ยกเลิก" [ref=e119] [cursor=pointer]
+              - button "บันทึกข้อมูล" [ref=e120] [cursor=pointer]
+```

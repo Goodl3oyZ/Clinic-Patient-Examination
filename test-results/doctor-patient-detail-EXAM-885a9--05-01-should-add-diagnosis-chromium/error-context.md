@@ -1,0 +1,163 @@
+# Page snapshot
+
+```yaml
+- generic [active]:
+  - generic:
+    - list:
+      - listitem [ref=e1]:
+        - generic [ref=e2]:
+          - generic [ref=e3]: เกิดข้อผิดพลาด
+          - generic [ref=e4]: insert or update on table "patient_diagnoses" violates foreign key constraint "patient_diagnoses_created_by_fkey"
+        - button [ref=e5] [cursor=pointer]:
+          - img [ref=e6]
+    - region "Notifications alt+T"
+    - generic:
+      - complementary:
+        - generic:
+          - generic:
+            - link:
+              - /url: /mongkolkiri_clinic-main
+              - generic:
+                - img
+              - generic:
+                - heading [level=1]: มงคลคีรี
+                - paragraph: MCMS
+          - navigation:
+            - link:
+              - /url: /mongkolkiri_clinic-main
+              - img
+              - text: แดชบอร์ด
+            - link:
+              - /url: /mongkolkiri_clinic-main/register
+              - img
+              - text: ลงทะเบียนผู้ป่วย
+            - link:
+              - /url: /mongkolkiri_clinic-main/patients
+              - img
+              - text: รายชื่อผู้ป่วย
+          - generic:
+            - generic:
+              - generic:
+                - generic: D
+              - generic:
+                - paragraph: Dr. Test Doctor
+                - paragraph: doctor.test@example.com
+            - button:
+              - img
+              - text: ออกจากระบบ
+      - generic:
+        - banner:
+          - generic:
+            - heading [level=2]: ระบบบริหารจัดการคลินิก
+        - main:
+          - generic:
+            - generic:
+              - button:
+                - img
+                - text: กลับ
+              - button:
+                - img
+                - text: ส่งออก PDF
+            - generic:
+              - generic:
+                - heading [level=3]:
+                  - generic:
+                    - img
+                  - generic:
+                    - generic:
+                      - generic: John Doe
+                      - generic:
+                        - img
+                        - text: แพ้ยา
+                    - paragraph: "HN: HN266000"
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "วันเกิด:"
+                      - generic: 20 มิถุนายน 2019 (6 ปี)
+                    - generic:
+                      - img
+                      - generic: "เพศ:"
+                      - generic: ชาย
+                    - generic:
+                      - img
+                      - generic: "เลขบัตรประชาชน:"
+                      - generic: "1234567891234"
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "โทรศัพท์:"
+                      - generic: "0812345678"
+                    - generic:
+                      - img
+                      - generic: "ที่อยู่:"
+                      - generic: "-"
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                        - text: การแพ้ยา/อาหาร
+                      - generic:
+                        - generic: H
+                        - generic: HA
+                        - generic: SA-25
+            - generic:
+              - tablist:
+                - tab:
+                  - img
+                  - text: บันทึกอาการ
+                - tab [selected]:
+                  - img
+                  - text: การวินิจฉัย
+                - tab:
+                  - img
+                  - text: แผนการรักษา
+                - tab:
+                  - img
+                  - text: หัตถการ
+                - tab:
+                  - img
+                  - text: ประวัติยา
+              - tabpanel:
+                - generic:
+                  - generic:
+                    - heading [level=3]: ประวัติการวินิจฉัย (0 รายการ)
+                    - button:
+                      - img
+                      - text: เพิ่มการวินิจฉัย
+                  - generic:
+                    - paragraph: ยังไม่มีประวัติการวินิจฉัย
+  - dialog "เพิ่มการวินิจฉัยใหม่" [ref=e10]:
+    - heading "เพิ่มการวินิจฉัยใหม่" [level=2] [ref=e12]
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - text: วันที่วินิจฉัย
+        - textbox "วันที่วินิจฉัย" [ref=e15]: 2026-02-25
+      - generic [ref=e16]:
+        - text: รหัส ICD-10 *
+        - textbox "รหัส ICD-10 *" [ref=e17]:
+          - /placeholder: เช่น J06.9
+          - text: J06.9
+      - generic [ref=e18]:
+        - text: คำอธิบาย
+        - textbox "คำอธิบาย" [ref=e19]:
+          - /placeholder: เช่น Upper respiratory infection
+          - text: Upper respiratory infection
+      - generic [ref=e20]:
+        - text: ประเภท
+        - combobox [ref=e21] [cursor=pointer]:
+          - generic: หลัก (Primary)
+          - img [ref=e22]
+      - generic [ref=e24]:
+        - text: หมายเหตุ
+        - textbox "หมายเหตุ" [ref=e25]:
+          - /placeholder: หมายเหตุเพิ่มเติม...
+    - generic [ref=e26]:
+      - button "ยกเลิก" [ref=e27] [cursor=pointer]
+      - button "บันทึก" [ref=e28] [cursor=pointer]
+    - button "Close" [ref=e29] [cursor=pointer]:
+      - img [ref=e30]
+      - generic [ref=e33]: Close
+```
